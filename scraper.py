@@ -2,6 +2,7 @@ import yfinance as yf
 import requests
 from bs4 import BeautifulSoup
 import json
+import datetime
 
 def fetch_stock_data():
     ticker = "TTWO"
@@ -28,16 +29,38 @@ def fetch_news():
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
     news_table = soup.find("table", class_="fullview-news-outer")
+    
     news_data = []
+    last_date = None  # To store the last date seen
+
     if news_table:
         for row in news_table.find_all("tr"):
             title_cell = row.find("a")
             date_cell = row.find("td")
-            if title_cell and date_cell:
+            
+            # If both title and date exist
+            if title_cell:
+                title = title_cell.text.strip()
+                
+                if date_cell:
+                    date_text = date_cell.text.strip()
+                    # If there's a date, store it as the last date
+                    if date_text != "":  
+                        last_date = date_text
+                        date_time = date_text
+                    else:
+                        # If there's no date, use the last seen date
+                        date_time = last_date if last_date else "Unknown"
+                else:
+                    # Fallback in case there's no date cell
+                    date_time = last_date if last_date else "Unknown"
+                
+                # Append the news item with its date and title
                 news_data.append({
-                    "date_time": date_cell.text.strip(),
-                    "title": title_cell.text,
+                    "date_time": date_time,
+                    "title": title,
                 })
+
     with open("data/news_data.json", "w") as f:
         json.dump(news_data, f, indent=4)
 
