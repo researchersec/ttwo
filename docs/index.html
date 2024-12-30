@@ -4,18 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TTWO Stock Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>TTWO Stock Dashboard</h1>
-  <div id="stock-data">
-    <h2>Stock Data</h2>
-    <ul id="stock-list"></ul>
+<body class="bg-gray-900 text-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+
+  <h1 class="text-4xl font-bold text-teal-400 mb-8">TTWO Stock Dashboard</h1>
+
+  <div id="stock-data" class="bg-gray-800 rounded-lg shadow-lg p-6 w-full md:w-3/4 lg:w-1/2 mb-6">
+    <h2 class="text-xl font-semibold text-white mb-4">Stock Data</h2>
+    <ul id="stock-list" class="space-y-4">
+      <!-- Stock data will be injected here by JavaScript -->
+    </ul>
   </div>
-  <div id="news-data">
-    <h2>Latest News</h2>
-    <ul id="news-list"></ul>
+
+  <div id="news-data" class="bg-gray-800 rounded-lg shadow-lg p-6 w-full md:w-3/4 lg:w-1/2">
+    <h2 class="text-xl font-semibold text-white mb-4">Latest News</h2>
+    <ul id="news-list" class="space-y-4">
+      <!-- News will be injected here by JavaScript -->
+    </ul>
   </div>
-  <script src="script.js"></script>
+
+  <script>
+    async function fetchData() {
+      const stockResponse = await fetch("stock_data.json");
+      const newsResponse = await fetch("news_data.json");
+      const stockData = await stockResponse.json();
+      const newsData = await newsResponse.json();
+
+      const stockList = document.getElementById("stock-list");
+      const weeklyChange = stockData.weekly_change;
+      const monthlyChange = stockData.monthly_change;
+
+      const weeklyClass = weeklyChange > 0 ? "text-green-400" : "text-red-500";
+      const monthlyClass = monthlyChange > 0 ? "text-green-400" : "text-red-500";
+
+      stockList.innerHTML = `
+        <li class="p-4 bg-gray-700 rounded-md">Open: ${stockData.open}</li>
+        <li class="p-4 bg-gray-700 rounded-md">High: ${stockData.high}</li>
+        <li class="p-4 bg-gray-700 rounded-md">Low: ${stockData.low}</li>
+        <li class="p-4 bg-gray-700 rounded-md">Close: ${stockData.close}</li>
+        <li class="p-4 bg-gray-700 rounded-md">Volume: ${stockData.volume}</li>
+        <li class="p-4 bg-gray-700 rounded-md">Weekly Change: <span class="${weeklyClass}">${weeklyChange.toFixed(2)}%</span></li>
+        <li class="p-4 bg-gray-700 rounded-md">Monthly Change: <span class="${monthlyClass}">${monthlyChange.toFixed(2)}%</span></li>
+      `;
+
+      const newsList = document.getElementById("news-list");
+      newsData.forEach(news => {
+        const li = document.createElement("li");
+        li.classList.add("p-4", "bg-gray-700", "rounded-md");
+        li.innerHTML = `<span class="text-teal-400">${news.date_time}</span> - ${news.title}`;
+        newsList.appendChild(li);
+      });
+    }
+
+    fetchData();
+  </script>
 </body>
 </html>
