@@ -1,5 +1,9 @@
 [
     {
+        "date_time": "Jan-10-25 05:50PM",
+        "title": "Analyst Report: Take-Two Interactive Software, Inc."
+    },
+    {
         "date_time": "Jan-09-25 09:30AM",
         "title": "Wall Street Analysts Think Take-Two (TTWO) Is a Good Investment: Is It?"
     },
@@ -394,9 +398,5 @@
     {
         "date_time": "04:47PM",
         "title": "Take-Two Interactive Software Beats Earnings Goal But Sales Light"
-    },
-    {
-        "date_time": "04:12PM",
-        "title": "Take-Two banks on new games to boost bookings in next two fiscal years"
     }
 ]
