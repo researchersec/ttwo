@@ -1,6 +1,14 @@
 [
     {
-        "date_time": "Today 08:00AM",
+        "date_time": "Today 12:03PM",
+        "title": "Jim Cramer on Take-Two Interactive Software, Inc. (TTWO): This Is Their Year"
+    },
+    {
+        "date_time": "Jan-28-25 05:50PM",
+        "title": "Take-Two Interactive (TTWO) Stock Declines While Market Improves: Some Information for Investors"
+    },
+    {
+        "date_time": "08:00AM",
         "title": "Roman Reigns Named WWE\u00ae 2K25 Cover Star as Franchise Evolves with Bloodline Showcase, Enhanced Gameplay Features, New Match Types, and New \"The Island\" Experience"
     },
     {
@@ -390,13 +398,5 @@
     {
         "date_time": "08:21AM",
         "title": "Grand Theft Auto Developers Stock Rises on Strong Growth Pipeline"
-    },
-    {
-        "date_time": "07:44AM",
-        "title": "5 Things to Know Before the Stock Market Opens"
-    },
-    {
-        "date_time": "07:23AM",
-        "title": "Paramount Global, Expedia, Nvidia rise premarket;  Array, Elf Beauty fall"
     }
 ]
