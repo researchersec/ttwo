@@ -1,6 +1,10 @@
 [
     {
-        "date_time": "Today 07:30AM",
+        "date_time": "Today 12:54AM",
+        "title": "Raymond James Lifts PT on Take-Two Interactive Software (TTWO) Stock"
+    },
+    {
+        "date_time": "Aug-16-25 07:30AM",
         "title": "The old software investing playbook is dead. Here's where to put your money now."
     },
     {
@@ -394,9 +398,5 @@
     {
         "date_time": "May-20-25 11:15PM",
         "title": "Take-Two Interactive Software, Inc. Announces Pricing of Public Offering of Common Stock"
-    },
-    {
-        "date_time": "04:02PM",
-        "title": "Take-Two Interactive Software, Inc. Announces Proposed Public Offering of Common Stock"
     }
 ]
