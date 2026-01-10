@@ -1,6 +1,14 @@
 [
     {
-        "date_time": "Today 05:50PM",
+        "date_time": "Today 09:50AM",
+        "title": "Are You a Momentum Investor? This 1 Stock Could Be the Perfect Pick"
+    },
+    {
+        "date_time": "09:30AM",
+        "title": "Is Take-Two (TTWO) a Buy as Wall Street Analysts Look Optimistic?"
+    },
+    {
+        "date_time": "Jan-08-26 05:50PM",
         "title": "Take-Two Interactive (TTWO) Stock Falls Amid Market Uptick: What Investors Need to Know"
     },
     {
@@ -390,13 +398,5 @@
     {
         "date_time": "Nov-01-25 02:01PM",
         "title": "Video Game CEO Says Regenerative AI Will 'Increase Employment,' Despite Job Losses In The Industry"
-    },
-    {
-        "date_time": "Oct-31-25 01:28PM",
-        "title": "Charter Earnings Miss Estimates in Q3, Revenues Decline Y/Y"
-    },
-    {
-        "date_time": "Oct-30-25 01:38PM",
-        "title": "Comcast's Q3 Earnings Surpass Estimates, Revenues Decrease Y/Y"
     }
 ]
