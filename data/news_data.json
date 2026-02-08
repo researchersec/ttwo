@@ -1,6 +1,10 @@
 [
     {
-        "date_time": "Today 05:09PM",
+        "date_time": "Today 12:56AM",
+        "title": "Jim Cramer on Take-Two: \"I Do Think That You're Getting a Chance to Buy It\""
+    },
+    {
+        "date_time": "Feb-06-26 05:09PM",
         "title": "Top Analyst Reports for AMD, Constellation Energy & Freeport-McMoRan"
     },
     {
@@ -16,16 +20,16 @@
         "title": "Wells Fargo Raises Take-Two Interactive (TTWO) PT To $301 Following Q3 Bookings Beat"
     },
     {
-        "date_time": "Feb-04-26 03:35PM",
+        "date_time": "Feb-04-26 02:21PM",
+        "title": "Take-Two Sees AI As Production Aid, Not Business Threat"
+    },
+    {
+        "date_time": "03:35PM",
         "title": "Why Take-Two (TTWO) Shares Are Sliding Today"
     },
     {
         "date_time": "02:55PM",
         "title": "Nasdaq sinks as AMD fuels further tech slide"
-    },
-    {
-        "date_time": "02:21PM",
-        "title": "Take-Two Sees AI As Production Aid, Not Business Threat"
     },
     {
         "date_time": "12:06PM",
@@ -394,9 +398,5 @@
     {
         "date_time": "09:14AM",
         "title": "Here Are Mondays Top Wall Street Analyst Research Calls: Archer Aviation, Beta Technologies, Carvana, Chevron, MPLX, Toast, Zscaler and More"
-    },
-    {
-        "date_time": "Nov-30-25 08:30AM",
-        "title": "Indie Games Power Up as Big-Budget Rivals Sacrifice Creativity to Profit"
     }
 ]
