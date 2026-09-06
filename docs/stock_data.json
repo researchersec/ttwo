@@ -1,9 +1,9 @@
 {
-    "open": NaN,
-    "high": NaN,
-    "low": NaN,
-    "close": NaN,
-    "volume": 2077910.0,
-    "weekly_change": NaN,
-    "monthly_change": NaN
+    "open": 211.9499969482422,
+    "high": 216.99000549316406,
+    "low": 211.3300018310547,
+    "close": 214.69000244140625,
+    "volume": 2080000.0,
+    "weekly_change": -2.2803798709274505,
+    "monthly_change": -8.607552213820249
 }
